@@ -3,6 +3,7 @@ kotlin = "2.3.21"
 spring-boot = "4.1.1"
 spring-dependency-management = "1.1.7"
 testcontainers = "1.20.4"
+awaitility = "4.2.2"
 
 [libraries]
 # Spring (sem versão - o BOM resolve; ficam aqui só pra centralizar o nome)
@@ -16,6 +17,7 @@ flyway-database-postgresql = { module = "org.flywaydb:flyway-database-postgresql
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 jackson-module-kotlin = { module = "tools.jackson.module:jackson-module-kotlin" }
 postgresql = { module = "org.postgresql:postgresql" }
+awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
 
 # Test
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
@@ -26,6 +28,8 @@ junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher
 spring-boot-testcontainers = { module = "org.springframework.boot:spring-boot-testcontainers" }
 testcontainers-junit = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
 testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+testcontainers-kafka = { module = "org.testcontainers:kafka", version.ref = "testcontainers" }
+testcontainers-mongodb = { module = "org.testcontainers:mongodb", version.ref = "testcontainers" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

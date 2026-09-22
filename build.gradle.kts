@@ -34,6 +34,9 @@ dependencies {
 	testImplementation(libs.spring.boot.testcontainers)
 	testImplementation(libs.testcontainers.junit)
 	testImplementation(libs.testcontainers.postgresql)
+	testImplementation(libs.testcontainers.kafka)
+	testImplementation(libs.testcontainers.mongodb)
+	testImplementation(libs.awaitility)
 
 	testImplementation(libs.spring.boot.starter.test)
 	testImplementation(libs.kotlin.test.junit5)
