@@ -4,6 +4,7 @@ spring-boot = "4.1.1"
 spring-dependency-management = "1.1.7"
 testcontainers = "1.20.4"
 awaitility = "4.2.2"
+mockito-kotlin = "5.4.0"
 
 [libraries]
 # Spring (sem versão - o BOM resolve; ficam aqui só pra centralizar o nome)
@@ -18,6 +19,7 @@ kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 jackson-module-kotlin = { module = "tools.jackson.module:jackson-module-kotlin" }
 postgresql = { module = "org.postgresql:postgresql" }
 awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito-kotlin" }
 
 # Test
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }

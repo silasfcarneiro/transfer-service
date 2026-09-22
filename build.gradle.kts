@@ -31,6 +31,7 @@ dependencies {
 	implementation(libs.jackson.module.kotlin)
 	runtimeOnly(libs.postgresql)
 
+	testImplementation(libs.mockito.kotlin)
 	testImplementation(libs.spring.boot.testcontainers)
 	testImplementation(libs.testcontainers.junit)
 	testImplementation(libs.testcontainers.postgresql)
