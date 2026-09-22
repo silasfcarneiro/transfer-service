@@ -23,6 +23,12 @@ class TransferService(
 
     @Transactional
     fun transfer(request: CreateTransferRequest, idempotencyKey: String): Transfer {
+
+        require(request.amount > 0) { "O valor da transferência deve ser positivo" }
+        require(request.sourceAccountId != request.targetAccountId) {
+            "Conta de origem e destino não podem ser a mesma"
+        }
+
         findExistingTransfer(idempotencyKey)?.let { return it }
 
         val source = loadAccount(request.sourceAccountId, "origem")
